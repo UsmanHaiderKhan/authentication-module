@@ -15,7 +15,7 @@ function App() {
 
   return (
     <div>
-      <NavBar />
+      <NavBar heading="SmartApp" />
       <div className='App'>
       {
         currentForm === "login" ? <Login onFormSwitch={toggleForm}/> : <Register onFormSwitch={toggleForm}/>
