@@ -15,7 +15,9 @@ export const Register = (props) => {
     }
 
     return(
-       <form onSubmit={handleRegisterForm}>
+    <div className='form-auth-container'> 
+        <h2>Register</h2>
+       <form className='register-form' onSubmit={handleRegisterForm}>
             {/* First Name */}
             <label htmlFor="firstName">FirstName</label>
             <input type="text" value={firstName} onSubmit={(e)=>setFirstName(e.target.value)} id='firstName' name='firstName'/>
@@ -39,6 +41,7 @@ export const Register = (props) => {
             {/* Another Statement */}
             <p>If you have an already Account. Please <button onClick={()=> props.onFormSwitch('login')} >Login</button> Here! </p>
        </form>
+    </div>
     );
 }
 
