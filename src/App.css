@@ -31,7 +31,7 @@ input{
   margin: 0.25rem 0;
   border-radius: 10px;
 }
-.btn-primary{
+.btn-log,.btn-reg{
   border: none;
   background-color: #ffffff;
   padding: 10px;
