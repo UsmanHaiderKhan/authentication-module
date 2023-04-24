@@ -37,9 +37,9 @@ export const Register = (props) => {
             <label htmlFor="confirmPassword"> ConfirmPassword</label>
             <input type="text" value={confirmPassword} onSubmit={(e)=>setConfirmPassword(e.target.value)} id='confirmPassword' name='confirmPassword'/>
                 {/* Register Btn  */}
-            <button type='submit' className='btn btn-primary'>Register</button> 
+            <button type='submit' className='btn btn-reg'>Register</button> 
             {/* Another Statement */}
-            <p>If you have an already Account. Please <button onClick={()=> props.onFormSwitch('login')} >Login</button> Here! </p>
+            <p className='mt-4'>If you have an already Account. Please <button onClick={()=> props.onFormSwitch('login')} className='btn btn-primary btn-sm'>Login</button> Here! </p>
        </form>
     </div>
     );
